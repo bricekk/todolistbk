@@ -38,3 +38,30 @@ it is to learn that I decided to create this application. the goal was to be abl
 ## Used Tools
 
 - [Ionic Framework](https://ionicframework.com)
+- [@ionic/storage](https://ionicframework.com/docs/angular/storage)
+- [Date-Fns](https://date-fns.org/)
+
+<a name="requirements"></a>
+
+## Requirements
+
+- min SDK 21
+
+<a name="installation"></a>
+
+## Installation
+
+Just download the apk file [here](https://drive.google.com/drive/folders/1N4e42w3WENSn80LGlKUoVNfZ3kn6QG8W?usp=sharing) and install it.
+
+<a name="contribute"></a>
+
+## Contribute
+
+Let's develop with collaborations. i would love to have contributions by raising issues and opening PRs. Filing an issue before PR is must.
+See [Contributing Guidelines](CONTRIBUTING.md).
+
+<a name="license"></a>
+
+## License
+
+Copyright (c) [2022] [Brice Kamhoua]
