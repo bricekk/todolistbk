@@ -31,7 +31,7 @@ it is to learn that I decided to create this application. the goal was to be abl
 - [x] Modify task
 - [x] Slider
 - [x] Mark task as done 
-- [] Get notified
+- [ ] Get notified
 
 <a name="tools"></a>
 
