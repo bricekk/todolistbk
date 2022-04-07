@@ -1,4 +1,4 @@
-# todolistbk
+# TodolistBK
 
 [![platform](https://img.shields.io/badge/platform-Android-yellow.svg)](https://www.android.com)
 [![API](https://img.shields.io/badge/API-21%2B-brightgreen.svg?style=plastic)](https://android-arsenal.com/api?level=21)
@@ -20,6 +20,8 @@ it is to learn that I decided to create this application. the goal was to be abl
 -mark them as completed.
 -and be notified when it's time to complete a task.
 
+<a name="specifications"></a>
+
 ## Specifications
 
 - [x] Splashcreen with custom animation
@@ -30,3 +32,9 @@ it is to learn that I decided to create this application. the goal was to be abl
 - [x] Slider
 - [x] Mark task as done 
 - [] Get notified
+
+<a name="tools"></a>
+
+## Used Tools
+
+- [Ionic Framework](https://ionicframework.com)
