@@ -6,7 +6,7 @@
 
 TodoListBK is an android app. It's a simple task management application to organize your work and life.
 
-This mobile app has been built with ionic cordova. Using Angular and Vanilla js.
+This mobile app has been built with ionic cordova. Using Angular, TypeScript and Vanilla js.
 
 <a name="description"></a>
 
