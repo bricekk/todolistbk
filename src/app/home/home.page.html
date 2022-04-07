@@ -1,0 +1,67 @@
+<ion-header [translucent]="true" style="margin-bottom: 2px;">
+  <ion-toolbar color="primary">
+    <ion-title>
+      <ion-item color="primary">
+        <ion-label style="font-weight: 600; font-size: 1.3em;">
+          TodoListBK
+          <p>{{today | date:'EEE MMM d y' : 'UTC' : 'fr'}}</p>
+        </ion-label>
+      </ion-item>
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+        <!--<ion-item>
+          <ion-label [style.color]="item.value.itemPriority === 'High' ? 'red' : (item.value.itemPriority === 'Medium') ? 'orange' : 'blue' ">
+            <ion-icon *ngIf="item.value.itemPriority === 'High'" color="danger" name="ellipse"></ion-icon>
+            <ion-icon *ngIf="item.value.itemPriority === 'Medium'" color="light" name="ellipse"></ion-icon>
+            <ion-icon *ngIf="item.value.itemPriority === 'Low'" color="blue" name="ellipse"></ion-icon>
+            {{ item.value.itemName }}
+          </ion-label>
+        </ion-item>-->
+
+        
+        <ion-card *ngFor="let item of todoList; let i = index">
+          <ion-card-header>
+            <ion-card-subtitle>
+              {{item.value.itemCategory}}
+            </ion-card-subtitle>
+            <ion-item-sliding >
+              <ion-item-options side="end">
+                <ion-item-option color="danger" expandable (click)="deleteTask(item.key)">
+                  <ion-icon style="font-size: 1.3rem;" name="trash-outline"></ion-icon>
+                </ion-item-option>
+              </ion-item-options>
+              <ion-item-options side="start">
+                <ion-item-option  color="primary" expandable (click)="update(item)">
+                  <ion-icon style="font-size: 1.3rem;" name="create-outline"></ion-icon>
+                </ion-item-option>
+              </ion-item-options>
+              <ion-item>
+                <ion-checkbox mode="ios" color="success"></ion-checkbox>
+                {{item.value.itemName}}
+                <div *ngIf="item.value.itemPriority === 'High'">
+                  <ion-icon  color="danger" name="alert-outline"></ion-icon>
+                  <ion-icon  color="danger" name="alert-outline"></ion-icon>
+                </div>
+                <div *ngIf="item.value.itemPriority === 'Medium'">
+                  <ion-icon  color="danger" name="alert-outline"></ion-icon>
+                </div>
+              </ion-item>
+            </ion-item-sliding> 
+          </ion-card-header>
+          <ion-card-content>
+            <ion-label>{{item.value.itemDate}} - {{item.value.itemTime}}</ion-label>
+          </ion-card-content>
+        </ion-card>
+
+
+      <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button (click)="GoToAddNewTask()">
+          <ion-icon name="add"></ion-icon>
+        </ion-fab-button>
+      </ion-fab>
+    
+</ion-content>

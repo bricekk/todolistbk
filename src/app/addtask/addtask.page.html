@@ -1,0 +1,77 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="end">
+      <ion-button (click)="dismiss()">
+        <ion-icon name="arrow-back-circle-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>Nouvelle Tâche</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Remplissez les champs</ion-card-subtitle>
+      <ion-card-title>Nouvelle tâche</ion-card-title>
+    </ion-card-header>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label position="floating">Tâche</ion-label>
+        <ion-input clear-input="true" placeholder="Nom de tâche" [(ngModel)]="itemName"></ion-input>
+      </ion-item>
+
+      <ion-item>
+        <ion-label>Priorité</ion-label>
+        <ion-select [(ngModel)]="itemPriority">
+          <ion-select-option value="Low">Basse</ion-select-option>
+          <ion-select-option value="Medium">Moyenne</ion-select-option>
+          <ion-select-option value="High">Elevée</ion-select-option>
+        </ion-select>
+      </ion-item>
+
+      <ion-item button="true" id="open-date-input">
+        <ion-icon name="calendar-outline" slot="start"></ion-icon>
+        <ion-label>Date</ion-label>
+        <ion-text slot="end">{{ dateValue }} - {{ timeValue }}</ion-text>
+        <ion-popover side="end" trigger="open-date-input" show-backdrop="false">
+          <ng-template>
+            <ion-datetime #popoverDatetime presentation="time-date"
+              (ionChange)="dateValue = formatDate(popoverDatetime.value); timeValue = formatTime(popoverDatetime.value)">
+              <ion-buttons slot="buttons">
+                <ion-button (click)="confirmDate()">
+                  <ion-icon name="checkmark-outline"></ion-icon>
+                </ion-button>
+                <ion-button (click)="resetDate()">Reset</ion-button>
+              </ion-buttons>
+            </ion-datetime>
+          </ng-template>
+        </ion-popover>
+      </ion-item>
+
+
+      <ion-item>
+        <ion-icon name="pricetag-outline" slot="start"></ion-icon>
+        <ion-label>Catégorie</ion-label>
+        <span>{{itemCategory}}</span>
+      </ion-item>
+
+      <ion-item>
+        <ion-slides [options]="options">
+          <ion-slide *ngFor="let category of categories; let i = index">
+            <ion-chip (click)="selectedCategory(i)">
+              <ion-label> {{ category}} </ion-label>
+            </ion-chip>
+          </ion-slide>
+        </ion-slides>
+      </ion-item>
+
+
+
+
+      <ion-button class="ion-margin" expand="block" type="submit" (click)="add()">Ajouter</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
