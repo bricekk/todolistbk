@@ -14,10 +14,14 @@ This mobile app has been built with ionic cordova. Using Angular and Vanilla js.
 
 it is to learn that I decided to create this application. the goal was to be able to have my own tool to manage my tasks and my schedule. So on this app I had to be able to: 
 
--add tasks to do later,
--delete them 
--modify them
+-add tasks to do later.
+
+-delete them. 
+
+-modify them.
+
 -mark them as completed.
+
 -and be notified when it's time to complete a task.
 
 <a name="specifications"></a>
