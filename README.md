@@ -57,13 +57,6 @@ it is to learn that I decided to create this application. the goal was to be abl
 
 Just download the apk file [here]() and install it.
 
-<a name="contribute"></a>
-
-## Contribute
-
-Let's develop with collaborations. i would love to have contributions by raising issues and opening PRs. Filing an issue before PR is must.
-See [Contributing Guidelines](CONTRIBUTING.md).
-
 <a name="license"></a>
 
 ## License
