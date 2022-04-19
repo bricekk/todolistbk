@@ -55,7 +55,7 @@ it is to learn that I decided to create this application. the goal was to be abl
 
 ## Installation
 
-Just download the apk file [here](https://drive.google.com/drive/folders/1N4e42w3WENSn80LGlKUoVNfZ3kn6QG8W?usp=sharing) and install it.
+Just download the apk file [here]() and install it.
 
 <a name="contribute"></a>
 
