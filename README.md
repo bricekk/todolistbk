@@ -52,7 +52,7 @@ it is to learn that I decided to create this application. the goal was to be abl
 - min SDK 21
 
 <a name="images"></a>
-<img src="[imgReadme/2.jpg](https://github.com/bricekk/todolistbk/tree/master/imgReadme)"/>
+<img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/2.jpeg"/>
 
 <a name="installation"></a>
 
