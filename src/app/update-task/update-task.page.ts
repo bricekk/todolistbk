@@ -27,6 +27,13 @@ export class UpdateTaskPage implements OnInit {
   dateValue = '';
   timeValue = '';
 
+  options = {
+    slidesPerView:2.5,
+    centeredSlides:true,
+    loop: true,
+    spaceBetween: 5
+  }
+
   newTaskObj= {}
 
   constructor(public modalCtrl: ModalController, public todoService: TodoService) { }

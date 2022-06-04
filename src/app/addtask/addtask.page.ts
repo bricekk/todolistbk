@@ -113,7 +113,7 @@ export class AddtaskPage implements OnInit {
 
     let uid = this.itemName + this.dateValue;
     
-    if(trimedTaskNamed.length !== 0 && trimedTaskDate.length != 0){
+    if(trimedTaskNamed.length != 0 && trimedTaskDate.length != 0){
       await this.todoService.addTask(uid, this.newTaskObj)
     }else{                 
       this.presentAlert();

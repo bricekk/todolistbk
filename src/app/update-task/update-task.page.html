@@ -11,17 +11,17 @@
   <ion-card>
     <ion-card-header>
       <ion-card-subtitle>Remplissez les champs</ion-card-subtitle>
-      <ion-card-title>Nouvelle tache</ion-card-title>
+      <ion-card-title>Nouvelle tâche</ion-card-title>
     </ion-card-header>
   
     <ion-card-content>
       <ion-item>
-        <ion-label position="floating">Tache</ion-label>
-        <ion-input [(ngModel)]="itemName"></ion-input>
+        <ion-label position="floating">Tâche</ion-label>
+        <ion-input [(ngModel)]="itemName" placeholder="tâche" clearInput="true"></ion-input>
       </ion-item>
 
       <ion-item>
-        <ion-label>Priorite</ion-label>
+        <ion-label>Priorité</ion-label>
         <ion-select [(ngModel)]="itemPriority">
           <ion-select-option value="Low">Basse</ion-select-option>
           <ion-select-option value="Medium">Moyenne</ion-select-option>
@@ -53,16 +53,27 @@
       
       <ion-item>
         <ion-icon name="pricetag-outline" slot="start"></ion-icon>
-        <ion-label>Categorie</ion-label>
-        <span>{{ categorySlectedCategory }}</span>
+        <ion-label>Catégorie</ion-label>
+<!--         <span>{{ categorySlectedCategory }}</span>
       </ion-item>
 
       <ion-item>
         <ion-chip *ngFor="let category of categories; let i = index" (click)="selectedCategory(i)">
           <ion-label> {{ category}} </ion-label>
         </ion-chip>
-      </ion-item>
+      </ion-item> -->
+      <span>{{categorySlectedCategory}}</span>
+    </ion-item>
 
+    <ion-item>
+      <ion-slides [options]="options">
+        <ion-slide *ngFor="let category of categories; let i = index" (click)="selectedCategory(i)">
+          <ion-chip (click)="selectedCategory(i)">
+            <ion-label> {{ category}} </ion-label>
+          </ion-chip>
+        </ion-slide>
+      </ion-slides>
+    </ion-item>
       
 
 

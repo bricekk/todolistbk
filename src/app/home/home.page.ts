@@ -4,6 +4,10 @@ import { AddtaskPage } from '../addtask/addtask.page';
 import { TodoService } from '../todo.service';
 import { UpdateTaskPage } from '../update-task/update-task.page';
 import { OnInit } from '@angular/core';
+import { IonRouterOutlet, Platform } from '@ionic/angular';
+import { Plugins } from '@capacitor/core';
+const { App } = Plugins;
+
 
 @Injectable({
   providedIn: 'root'
@@ -24,8 +28,14 @@ export class HomePage implements OnInit {
 
   today: number = Date.now();
 
-  constructor(public todoService: TodoService, public modalCtrl: ModalController, public alertController: AlertController) {
+  constructor(private routerOutlet: IonRouterOutlet,private platform: Platform,public todoService: TodoService, public modalCtrl: ModalController, public alertController: AlertController) {
     this.getAlltask()
+
+    this.platform.backButton.subscribeWithPriority(-1, () => {
+      if (!this.routerOutlet.canGoBack()) {
+        App.exitApp();
+      }
+    });
   }
 
 
