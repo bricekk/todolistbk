@@ -52,7 +52,7 @@ it is to learn that I decided to create this application. the goal was to be abl
 - min SDK 21
 
 <a name="images"></a>
-<img src="./imgReadme/2.jpg"/>
+<img src="imgReadme/2.jpg"/>
 
 <a name="installation"></a>
 
