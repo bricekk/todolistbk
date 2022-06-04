@@ -57,6 +57,12 @@ it is to learn that I decided to create this application. the goal was to be abl
 <img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/4.jpeg" width="200" height="400"/>
 <img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/5.jpeg" width="200" height="400"/>
 <img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/6.jpeg" width="200" height="400"/>
+<img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/7.jpeg" width="200" height="400"/>
+<img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/8.jpeg" width="200" height="400"/>
+<img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/8.jpeg" width="200" height="400"/>
+<img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/index.jpeg" width="200" height="400"/>
+
+
 
 <a name="installation"></a>
 
