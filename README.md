@@ -53,6 +53,10 @@ it is to learn that I decided to create this application. the goal was to be abl
 
 <a name="images"></a>
 <img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/2.jpeg" width="200" height="400"/>
+<img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/3.jpeg" width="200" height="400"/>
+<img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/4.jpeg" width="200" height="400"/>
+<img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/5.jpeg" width="200" height="400"/>
+<img src="https://github.com/bricekk/todolistbk/blob/master/imgReadme/6.jpeg" width="200" height="400"/>
 
 <a name="installation"></a>
 
